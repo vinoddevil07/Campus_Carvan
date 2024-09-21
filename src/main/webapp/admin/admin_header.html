@@ -1,0 +1,104 @@
+<style>
+.nav-link {
+	color: black;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+.dropdown-item {
+	color: blue;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+.nav-item {
+	margin-right: 20px;
+}
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/CampusCarvan/admin/admin_home.jsp">
+			<img src="/CampusCarvan/images/cclogo.png" alt="CC Logo"
+			loading="lazy" style="width: 40%; height: 40%; margin-left: 15%" />
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+				<li class="nav-item"><a class="nav-link" href="/CampusCarvan/admin/view_school_details.jsp">School Details</a></li>
+				<li class="nav-item"><a class="nav-link" href="/CampusCarvan/admin/view_parent_details.jsp"> Parents Details</a></li>
+				<li class="nav-item"><a class="nav-link" href="/CampusCarvan/admin/view_drivers_details.jsp"> Drivers Details</a></li>
+
+				<li class="nav-item"><a class="nav-link"
+					href="/CampusCarvan/admin/driver_details.jsp">Add Drivers</a></li>
+				
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">Vehicle</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/vehicle_type.jsp">Add Vehicle Types</a></li>
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/add_vehicles.jsp">Add Vehicles</a></li>
+							<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/view_vehicles_details.jsp">All Vehicles</a></li>
+					</ul></li>
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> School Booking</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/school_pending_booking.jsp">Pending
+								Booking</a></li>
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/view_school_booking.jsp">Confirm
+								Booking</a></li>
+					</ul></li>
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Parent Booking</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/view_pending.jsp">Pending Booking</a></li>
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/view_confirm_booking.jsp">Confirm
+								Booking</a></li>
+					</ul></li>
+
+
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">Message</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/admin_compose.jsp">Compose</a></li>
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/admin_inbox.jsp">Inbox</a></li>
+						<li><a class="dropdown-item" href="#">Send items</a></li>
+					</ul></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false">View</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/view_contacts.jsp">Contact</a></li>
+							<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/admin_edit_profile.jsp">Edit Profile</a></li>
+							
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/admin/view_feedbacks.jsp">Feedback</a></li>
+						<li><a class="dropdown-item"
+							href="/CampusCarvan/Admin_Logout">Logout</a></li>
+					</ul></li>
+			</ul>
+		</div>
+	</div>
+</nav>

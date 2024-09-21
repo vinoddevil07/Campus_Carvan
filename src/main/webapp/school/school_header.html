@@ -1,0 +1,78 @@
+<style>
+    .navbar {
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-brand img {
+        width: 40%;
+        height: auto;
+    }
+
+    .navbar-nav .nav-link {
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        color: black;
+        transition: color 0.3s;
+        margin-right: 20px; 
+    }
+
+   
+
+
+    .dropdown-item {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/CampusCarvan/school/school_home.jsp">
+			<img src="/CampusCarvan/images/cclogo.png" alt="CC Logo"
+			loading="lazy" style="width: 40%; height: 40%; margin-left: 15%" />
+		</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Booking</strong></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/CampusCarvan/school/view_vehicles.jsp"><strong>Vehicle Types</strong></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>School Booking</strong></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/CampusCarvan/school/view_confirm_booking.jsp"><strong>Confirm Booking</strong></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>Message</strong></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/CampusCarvan/school/school_compose.jsp"><strong>Compose</strong></a></li>
+                        <li><a class="dropdown-item" href="/CampusCarvan/school/school_inbox.jsp"><strong>Inbox</strong></a></li>
+                        <li><a class="dropdown-item" href="#"><strong>Send items</strong></a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>View</strong></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/CampusCarvan/school/school_edit_profile.jsp"><strong>Edit Profile</strong></a></li>
+                        <li><a class="dropdown-item" href="/CampusCarvan/common_jsp/user_feedback.jsp"><strong>Feedback</strong></a></li>
+                        <li><a class="dropdown-item" href="/CampusCarvan/School_Logout"><strong>Logout</strong></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

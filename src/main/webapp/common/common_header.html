@@ -1,0 +1,87 @@
+<style>
+/* Navbar Styling */
+.navbar-brand img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.dropdown-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    border: none; /* Added */
+}
+
+.dropdown-menu a {
+    color: #000; /* Changed text color to black */
+}
+
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+}
+</style>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a   style="height: 40%;width: 40%" class="navbar-brand" href="/CampusCarvan/common_jsp/index.jsp">
+            <img src="/CampusCarvan/images/cclogo.png" alt="cc Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/CampusCarvan/common_jsp/index.jsp"><strong>Home</strong></a></li>
+              
+                <li class="nav-item"><a class="nav-link" href="/CampusCarvan/common_jsp/view_feedback.jsp"><strong>Rating</strong></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Registration</strong></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/CampusCarvan/parent/parent_registration.jsp"><strong>Parent</strong></a>
+                        <a class="dropdown-item" href="/CampusCarvan/school/school_registration.jsp"><strong>School</strong></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Vehicle</strong></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/CampusCarvan/admin/view_vehicles.jsp"><strong>View Vehicles</strong></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Login</strong></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/CampusCarvan/parent/parent_login.jsp"><strong>Parent Login</strong></a>
+                        <a class="dropdown-item" href="/CampusCarvan/admin/admin_login.jsp"><strong>Admin Login</strong></a>
+                        <a class="dropdown-item" href="/CampusCarvan/school/school_login.jsp"><strong>School Login</strong></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
